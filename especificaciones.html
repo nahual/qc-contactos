@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Contactos - Especificaci&oacute;n</title>
+    <style type="text/css">
+/*<![CDATA[*/
+    ul { margin:0; padding:0 }
+    p { margin:0 }
+    td {
+        vertical-align:top;
+        width:45%;
+        border-style:solid;
+        border-color:#000000;
+        border-width:1pt;
+        padding:0.6em;
+    }
+    .c19{list-style-type:square}
+    .c17{list-style-type:circle}
+    li {margin-left:2em}
+    table{border-collapse:collapse}
+    body{font-size:11pt;font-family:Arial}
+    h2{font-size:14pt;font-weight:bold}
+    h3{color:#666666;font-size:12pt;font-weight:bold}
+    /*]]>*/
+    </style>
+</head>
+
+<body>
+    <h2>Especificaci&oacute;n No Funcional</h2>
+
+    <ul>
+        <li>Debe funcionar correctamente en los siguientes navegadores: Firefox, Chrome</li>
+        <li>Debe permitir almacenar al menos 15 contactos</li>
+    </ul>
+
+    <h2>Especificaci&oacute;n Funcional</h2>
+
+    <h3>Listado</h3>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p>El usuario ingresa al sistema</p>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>El sistema muestra la pantalla:</p>
+
+                    <ul>
+                        <li>T&iacute;tulos: Contactos</li>
+                        <li>Grilla
+                            <ul class="c17">
+                                <li>Columnas
+                                    <ul class="c19">
+                                        <li>Nombre: Nombre del contacto</li>
+
+                                        <li>Mail: Direcci&oacute;n de correo electr&oacute;nico
+                                        del contacto</li>
+
+                                        <li>Opciones (S&oacute;lo disponibles cuando hay contactos guardados)
+                                            <ul>
+                                                <li>Editar</li>
+                                                <li>Borrar</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul class="c17">
+                                <li>Por defecto la grilla est&aacute; vac&iacute;a. Se debe visualizar el mensaje: "No hay contactos guardados"</li>
+                                <li>Opciones para ordenar los datos por nombre o por mail</li>
+                                <li>Por defecto, la lista se ordena alfab&eacute;ticamente por nombre de contacto.</li>
+                            </ul>    
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>Opci&oacute;n para agregar nuevo contacto:  "Nuevo Contacto"</li>
+                    </ul>
+                </td>
+
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Alta</h3>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p>El usuario selecciona la opci&oacute;n para agregar un
+                    nuevo contacto</p>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>El sistema despliega un formulario con la
+                    siguiente informaci&oacute;n</p>
+
+                    <ul>
+                        <li>Nombre(texto, obligatorio, 35 caracteres)
+                        Valor por defecto: vac&iacute;o. Nombre del contacto.</li>
+
+                        <li>Mail (direcci&oacute;n de correo electr&oacute;nico,
+                        obligatorio, 35 caracteres) Valor por defecto: vac&iacute;o.</li>
+
+                        <li>Si ya se encuentra creando un nuevo
+                        contacto o editando uno existente, el sisiema emite un mensaje
+                        informando que se perder&aacute;n los cambios.pciones: Guardar y
+                        cancelar</li>
+                    </ul>
+                </td>
+
+                <td>
+                    <p>Si se estaba agregando un nuevo contacto o
+                    editando uno existente el sistema emite un mensaje informando que se
+                    perder&aacute;n los cambios</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>El usuario completa los campos
+                    obligatorios.</p>
+                </td>
+
+                <td>
+                    <p></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>El sistema almacena los datos, los cuales se
+                    visualizan en la parte superior de la pantalla, en una grilla junto a
+                    las opciones editar y eliminar.</p>
+                </td>
+
+                <td>
+                    <ul>
+                        <li>Si no se completa alg&uacute;n campo obligatorio
+                        el sistema muestra un mensaje informando que dicho campo debe
+                        completarse.</li>
+
+                        <li>Si la direcci&oacute;n de correo no cumple con
+                        el formato especificado en el Anexo A, el sistema emite el mensaje: "El valor ingresado no es un email"</li>
+
+                        <li>Si ya se encuentra almacenada una
+                        direcci&oacute;n de correo electr&oacute;nico igual a la que se est&aacute;
+                        ingresando, el sistema emite un mensaje informando que no es
+                        posible almacenar direcciones de mail duplicadas</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Edici&oacute;n</h3>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p>El usuario selecciona la opci&oacute;n para modificar un
+                    contacto</p>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>El sistema despliega un formulario con la siguiente informaci&oacute;n</p>
+                    <ul>
+                        <li>Nombre(texto, obligatorio, 35 caracteres)
+                        Valor por defecto:El nombre asociado al contacto
+                        seleccionado</li>
+
+                        <li>Mail (direcci&oacute;n de correo electr&oacute;nico,
+                        obligatorio, 35 caracteres) Valor por defecto: El mail asociado
+                        al contacto seleccionado</li>
+
+                        <li>Opciones: Guardar y cancelar</li>
+                    </ul>
+                </td>
+
+                <td>
+                    <p>Si se estaba agregando un nuevo contacto o
+                    editando uno existente el sistema emite un mensaje informando que se
+                    perder&aacute;n los cambios</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>El usuario los campos</p>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>El sistema almacena los datos</p>
+                </td>
+
+                <td>
+                    <p>Mismas validaciones que en el alta</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Baja</h3>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p>El usuario selecciona la opci&oacute;n para eliminar un
+                    contacto</p>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>El sistema emite un mensaje solicitando la
+                    confirmaci&oacute;n del usuario sobre estar seguro de querer borrar el
+                    contacto: "Est&aacute; seguro que quiere borrar el contacto &lt;Nombre del
+                    contacto&gt;"</p>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>El usuario confirma el mensaje</p>
+                </td>
+
+                <td>
+                    <p>Si el usuario cancela el mensaje, los datos
+                    no se eliminan</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Los datos son eliminados</p>
+                </td>
+
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br/>
+    <p style="font-weight:bold">Anexo A: Formato de direcciones de email</p>
+
+    <p>Siguiendo las especificaciones de <a href="http://tools.ietf.org/html/rfc5322#section-3.4.1">http://tools.ietf.org/html/rfc5322#section-3.4.1</a>, el mail est&aacute; formado por:</p>
+
+    <ul>
+        <li>Una cadena no nula compuesta por letras, n&uacute;meros, "+",
+        ".", "_" y/o "-"</li>
+
+        <li>El signo @</li>
+
+        <li>Una cadena no nula, compuesta por letras, n&uacute;meros,
+        &nbsp;".", "_" y/o "-"</li>
+
+        <li>Un punto</li>
+
+        <li>Una cadena de entre 2 y 4 caracteres (inclusive)
+        compuesta por letras</li>
+    </ul>
+</body>
+</html>

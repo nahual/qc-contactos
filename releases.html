@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Releases de Contactos</title>
+    <link href="css/releases.css" rel="stylesheet">
+</head>
+<body>
+
+<h1>Releases de Contactos</h1>
+
+<table id="releases">
+    <tr>
+        <th style="width:50%">Bug</th>
+        <th style="width:5%">v1</th>
+        <th style="width:5%">v2</th>
+        <th style="width:5%">RN2</th>
+        <th style="width:5%">v3</th>
+        <th style="width:5%">RN3</th>
+    </tr>
+     <tr>
+        <td class="desc">Listado - Falta el mensaje de no hay contactos disponibles</td>
+        <td>X</td><td></td><td>Ok</td><td>X</td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">Listado - intentar ordenar cualquier columna "mezcla" los valores (shuffle en vez de sort)</td>
+        <td>X</td><td>X</td><td>No Ok</td><td></td><td>Ok</td>
+    </tr>
+     <tr>
+        <td class="desc">Listado - El título  es “Libreta de Contactos” en lugar de “Contactos”</td>
+        <td>X</td><td></td><td>Ok</td><td></td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">Listado  - Hacer click en el ordenamiento sólo tiene efecto en browsers de Mozilla (Firefox)</td>
+        <td>X</td><td></td><td>Ok</td><td></td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">Alta - El valor por default del campo nombre es “Nombre”</td>
+        <td></td><td>X (fixme)</td><td>Ok</td><td></td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">Alta - La validación de mail sólo deja ingresar mails que terminen en .com</td>
+        <td>X</td><td></td><td>Ok</td><td></td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">Alta - Al guardar un contacto (en el alta o en la edición) el último caracter del nombre desaparece</td>
+        <td></td><td></td><td></td><td>X (fixme)</td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">Alta - Permite ingresar un nombre de contacto vacío en el alta o la edición</td>
+        <td>X</td><td></td><td>Ok</td><td></td><td></td>
+    </tr>
+     <tr>
+        <td class="desc">Alta - Sólo permite guardar 10 contactos</td>
+        <td></td><td>X (fixme)</td><td>Ok</td><td></td><td></td>
+    </tr>
+    <tr>
+        <td class="desc">Edición - Los valores que trae para la edición son incorrectos, ya que carga los datos de otra fila</td>
+        <td>X</td><td>X</td><td>No Ok</td><td></td><td>Ok</td>
+    </tr>
+    <tr>
+        <td class="desc">Edición - Al cancelar guarda de todos modos las modificaciones, sin importar las validaciones</td>
+        <td>X</td><td></td><td>Ok</td><td></td><td></td>
+    </tr>
+    <tr>
+        <td class="desc">Edición - Al editar un contacto, mantiene el original y agrega uno nuevo con los cambios</td>
+        <td></td><td></td><td></td><td>X (fixme)</td><td></td>
+    </tr>
+    <tr>
+        <td class="desc">Edición - Al intentar guardar un contacto al que no se le editó el mail, emite el mensaje de mail repetido</td>
+        <td></td><td>X</td><td></td><td></td><td>Ok</td>
+    </tr>
+    <tr>
+        <td class="desc">Baja - No existe la opción eliminar en Firefox  (concepto de bug bloqueante)</td>
+        <td>X (fixme)</td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td class="desc">Baja - Al cancelar el mensaje de eliminar en Chrome, igual se elimina al contacto</td>
+        <td></td><td>X (fixme)</td><td></td><td></td><td></td>
+    </tr>
+</table>
+
+</body>
+</html>

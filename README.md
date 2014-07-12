@@ -1,8 +1,10 @@
-Objetivos:
+## Objetivos
 
 - Presentar requerimientos no funcionales
 - Presentar bugs bloqueantes
 - Presentar dificultades que pueden presentarse cuando aparecen inconsistencias en los release notes
+
+## Consideraciones
 
 - El issue "Alta - Al guardar un contacto (en el alta o en la edición) el último caracter del nombre desaparece" no queda fuera de alcance en el release notes, porque no estamos manejando RN 4
 - El issue "Edición - Al editar un contacto, mantiene el original y agrega uno nuevo con los cambios" no queda fuera de alcance en el release notes, porque no estamos manejando RN 4
